@@ -1,6 +1,6 @@
 ### Workshop 1
 # Ancient Site
-### Trinity Chung
+##### Trinity Chung
 
 Alright guys.. we are going to be travelling far, far back in history into a dangerous era:
 
@@ -71,7 +71,7 @@ Resources:
 * Honestly, you can Google anything
 
 
-## Making It Pretty(?
+## Making It Pretty(?)
 ### CSS
 
 So HTML is great and all, but it lacks... style. Navigate to your css file (on the left, `style.css`).
