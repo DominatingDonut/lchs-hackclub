@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hack Club</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<!-- CUSTOM FONTS-->
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+<style type="text/css">
+    @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+    /* iOS BLUE LINKS */
+    .appleBody a {color:#68440a; text-decoration: none;}
+    .appleFooter a {color:#999999; text-decoration: none;}
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 525px) {
+
+        /* ALLOWS FOR FLUID TABLES */
+        table[class="wrapper"]{
+          width:100% !important;
+        }
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        td[class="logo"]{
+          text-align: left;
+          padding: 20px 0 20px 0 !important;
+        }
+
+        td[class="logo"] img{
+          margin:0 auto!important;
+        }
+
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        td[class="mobile-hide"]{
+          display:none;}
+
+        img[class="mobile-hide"]{
+          display: none !important;
+        }
+
+        img[class="img-max"]{
+          max-width: 100% !important;
+          height:auto !important;
+        }
+
+        /* FULL-WIDTH TABLES */
+        table[class="responsive-table"]{
+          width:100%!important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        td[class="padding"]{
+          padding: 10px 5% 15px 5% !important;
+        }
+
+        td[class="padding-copy"]{
+          padding: 10px 5% 10px 5% !important;
+          text-align: center;
+        }
+
+        td[class="padding-meta"]{
+          padding: 30px 5% 0px 5% !important;
+          text-align: center;
+        }
+
+        td[class="no-pad"]{
+          padding: 0 0 20px 0 !important;
+        }
+
+        td[class="no-padding"]{
+          padding: 0 !important;
+        }
+
+        td[class="section-padding"]{
+          padding: 50px 15px 50px 15px !important;
+        }
+
+        td[class="section-padding-bottom-image"]{
+          padding: 50px 15px 0 15px !important;
+        }
+
+        /* ADJUST BUTTONS ON MOBILE */
+        td[class="mobile-wrapper"]{
+            padding: 10px 5% 15px 5% !important;
+        }
+
+        table[class="mobile-button-container"]{
+            margin:0 auto;
+            width:100% !important;
+        }
+
+        a[class="mobile-button"]{
+            width:80% !important;
+            padding: 15px !important;
+            border: 0 !important;
+            font-size: 16px !important;
+        }
+
+    }
+
+    /* CUSTOM STYLES */
+
+    /* ORPHEUS BANNER WAVE */
+    #orpheus-banner {
+        transition: transform 0.1875s cubic-bezier(0.375, 0, 0.675, 1) 0s;
+        transform-origin: 0% 0%;
+    }
+    
+    #orpheus-banner:hover {
+        animation: wave 1s infinite linear;
+    }
+
+    @keyframes wave {
+        50% {
+            transform: rotate(-10deg)
+        }
+        100% {
+            transform: rotate(0deg)
+        }
+    }
+</style>
+</head>
+<body style="margin: 0; padding: 0;">
+
+<!-- HEADER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#ffffff">
+            <div align="center" style="padding: 0px 15px 0px 15px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapper">
+                    <!-- LOGO/PREHEADER TEXT -->
+                    <tr>
+                        <td style="padding: 20px 0px 30px 0px;" class="logo">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  
+                                    <td bgcolor="#ffffff" width="100" align="left">
+                                        <a href="https://hackclub.com/" target="_blank">
+                                            <img id="orpheus-banner" alt="" src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/banner-orpheus-hand.png" width="230" style="display: block; font-family: Nunito, Verdana, sans-serif; color: #666666; font-size: 16px;" border="0">
+                                        </a>
+                                    </td>
+                                  
+                                    <td bgcolor="#ffffff" width="400" align="right" class="mobile-hide">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="right" style="padding: 0 0 5px 0; font-size: 14px; font-family: Nunito, Verdana, sans-serif; color: #666666; text-decoration: none;"><span style="color: #666666; text-decoration: none;">HackClub@LCHS<br></span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<!-- ONE COLUMN SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 70px 15px;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- HERO IMAGE -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                             <tr>
+                                                  <td class="padding-copy">
+                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                         <td align="center" style="font-size: 25px; font-family: Nunito, Verdana, sans-serif; color: #333333; padding-top: 0px !important" class="padding-copy">
+                                                            Hey there!
+                                                        </td>
+                                                        </tr>
+                                                          <tr>
+                                                              <td align="center">
+                                                                  <img src="https://raw.githubusercontent.com/hackclub/dinosaurs/master/dinosaur_waving.png" width="200" border="0" alt="orpheus-wave" style="display: block; padding: 0; color: #666666; width: 300px; height: auto;" class="img-max">
+                                                              </td>
+                                                            </tr>
+                                                        </table>
+                                                  </td>
+                                              </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="center" style="font-size: 25px; font-family: Nunito, Verdana, sans-serif; color: #333333; padding-top: 30px;" class="padding-copy">
+                                                Glad you joined <strong style="color:#dd3300">HackClub</strong>!
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy">This year is going to be a blast!</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- ONE COLUMN W/ BOTTOM IMAGE SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#f8f8f8" align="center" style="padding: 70px 15px 70px 15px;" class="section-padding-bottom-image">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="center" style="font-size: 25px; font-family: Nunito, Verdana, sans-serif; color: #333333;" class="padding-copy">
+                                                What will we be doing?
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy">
+                                                Every meeting we'll be learning new codestuffs and making our own coolstuffs!
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/icons/idea.png" alt="Idea" width="64" height="64">
+                                                <img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/icons/red-arrow.png" alt="To" width="64" height="64">
+                                                <img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/icons/event-code.png" alt="Product" width="64" height="64">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- TWO COLUMN SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 70px 15px 70px 15px;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- TITLE SECTION AND COPY -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center">
+                                    <img src="https://raw.githubusercontent.com/hackclub/dinosaurs/master/code_dinosaur.png" width="200" border="0" alt="orpheus-coding" style="display: block; padding: 0; color: #666666; width: 400px; height: auto;" class="img-max">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- TWO COLUMNS -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td valign="top" style="padding: 0;" class="mobile-wrapper">
+ 
+                                   <!-- LEFT COLUMN -->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="left" class="responsive-table">
+                                        <tr>
+                                            <td style="padding: 20px 0 40px 0;">
+                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 0 0; color: #333333;" class="padding-copy">
+                                                            <img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/icons/code.png" alt="Code" width="64" height="64">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 0 0; font-size: 25px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #333333;" class="padding-copy">
+                                                            <strong style="color:#dd3300">Make</strong> stuff with code
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 20px 0; font-size: 16px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy">
+                                                            Learn by doing! Honestly, the feeling of making something that's totally YOURS is totally AWESOME. And the best part is, you can totally do it!
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- RIGHT COLUMN -->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="right" class="responsive-table">
+                                        <tr>
+                                            <td style="padding: 20px 0 20px 0;">
+                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 0 0; color: #333333;" class="padding-copy">
+                                                            <img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/icons/food.png" alt="Foooooood" width="64" height="64">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 0 0; font-size: 25px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #333333;" class="padding-copy">
+                                                            <strong style="color:#dd3300">Eat</strong> some brainfuel
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 20px 0; font-size: 16px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy">
+                                                            All that creative energy needs to come from somewhere, right? We will have some snacks every meeting! :)
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- TWO COLUMNS -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td valign="top" style="padding: 0;" class="mobile-wrapper">
+
+                                   <!-- LEFT COLUMN -->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="left" class="responsive-table">
+                                        <tr>
+                                            <td style="padding: 20px 0 20px 0;">
+                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 0 0; color: #333333;" class="padding-copy">
+                                                            <img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/icons/friend.png" alt="Friend" width="64" height="64">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 0 0; font-size: 25px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #333333;" class="padding-copy">
+                                                            <strong style="color:#dd3300">Meet</strong> cool people
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 20px 0; font-size: 16px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy">
+                                                            Who's up for an epic hack session? You can work in teams with anybody in the club, and you can always talk or ask any questions! That's what we're here for.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- RIGHT COLUMN -->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="right" class="responsive-table">
+                                        <tr>
+                                            <td style="padding: 20px 0 40px 0;">
+                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 0 0; color: #333333;" class="padding-copy">
+                                                            <img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/icons/shiny.png" alt="Shiny Stuff" width="64" height="64">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 0 0; font-size: 25px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #333333;" class="padding-copy">
+                                                            <strong style="color:#dd3300">Get</strong> free stuff!
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding: 20px 0 20px 0; font-size: 16px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy">
+                                                            We have neat stickers and free developer tools available! See some of the resources below.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+<!-- COMPACT ARTICLE SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#f8f8f8" align="center" style="padding: 70px 15px 70px 15px;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:0 0 20px 0;" class="responsive-table">
+                <!-- TITLE -->
+                <tr>
+                    <td align="center" style="padding: 0 0 10px 0; font-size: 25px; font-family: Nunito, Verdana, sans-serif; font-weight: normal; color: #333333;" class="padding-copy" colspan="2">
+                        Free Student Resources
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding: 20px 0 20px 0; font-size: 16px; line-height: 25px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy" colspan="2">
+                        These resources are for you and your code adventures! Just click on the link and say that you are a student or are from HackClub, and you will have access.
+                    </td>
+                </tr>
+
+                <!-- ICON -->
+                <tr>
+                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide">
+                        <a href="https://github.com/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/assets/icons/github.png" alt="GitHub" width="105" height="105">
+                        </a>
+                    </td>
+                    <td style="padding: 40px 0 0 0;" class="no-padding">
+                        <!-- ARTICLE -->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Nunito, Verdana, sans-serif; font-weight: normal; color: #aaaaaa;" class="padding-meta">
+                                    <a href="https://education.github.com/pack/offers">
+                                        GitHub Education
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Nunito, Verdana, sans-serif; font-weight: normal; color: #333333;" class="padding-copy">
+                                    GitHub Student Developer Pack
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy">
+                                    Includes a bunch of developer frameworks and tools, free to use. Check out the list <a href="https://education.github.com/pack/offers">here</a>!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:0 0 45px 25px;" align="left" class="padding">
+                                    <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                        <tr>
+                                            <td align="center">
+                                                <!-- BULLETPROOF BUTTON -->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                                    <tr>
+                                                        <td align="center" style="padding: 0;" class="padding-copy">
+                                                            <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <a href="https://www.notion.so/Student-Plan-for-Teams-cad4007fea1640719d051f9b4b49871b" target="_blank" style="font-size: 15px; font-family: Nunito, Verdana, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #dd3300; border-top: 10px solid #dd3300; border-bottom: 10px solid #dd3300; border-left: 20px solid #dd3300; border-right: 20px solid #dd3300; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">
+                                                                            <strong>Go and get it! &rarr;</strong>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- ICON -->
+                <tr>
+                    <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide">
+                        <a href="https://www.notion.so" target="_blank">
+                            <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F53669662-3b80-4e95-b152-fc7bdf20ecc5%2FNotion-logo-512.png?table=block&id=cad4007f-ea16-4071-9d05-1f9b4b49871b&width=250&cache=v2" alt="Notion" width="105" height="105" border="0" style="display: block; font-family: Nunito; color: #666666; font-size: 14px; width: 105px; height: 105px;">
+                        </a>
+                    </td>
+                    <td style="padding: 40px 0 0 0;" class="no-padding">
+                        <!-- ARTICLE -->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Nunito, Verdana, sans-serif; font-weight: normal; color: #aaaaaa;" class="padding-meta">
+                                    <a href="https://www.notion.so/">
+                                        notion.so
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="padding: 0 0 5px 25px; font-size: 22px; font-family: Nunito, Verdana, sans-serif; font-weight: normal; color: #333333;" class="padding-copy">
+                                    All-in-one workspace organizer for tasklists and more
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td align="left" style="padding: 10px 0 15px 25px; font-size: 16px; line-height: 24px; font-family: Nunito, Verdana, sans-serif; color: #666666;" class="padding-copy">
+                                    A clean, simple, useful organizer. The best todo-app I've seen in ages, honestly. Check it out <a href="https://www.notion.so/">here</a>!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:0 0 45px 25px;" align="left" class="padding">
+                                    <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                        <tr>
+                                            <td align="center">
+                                                <!-- BULLETPROOF BUTTON -->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                                    <tr>
+                                                        <td align="center" style="padding: 0;" class="padding-copy">
+                                                            <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <a href="https://www.notion.so/Student-Plan-for-Teams-cad4007fea1640719d051f9b4b49871b" target="_blank" style="font-size: 15px; font-family: Nunito, Verdana, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; background-color: #dd3300; border-top: 10px solid #dd3300; border-bottom: 10px solid #dd3300; border-left: 20px solid #dd3300; border-right: 20px solid #dd3300; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; display: inline-block;" class="mobile-button">
+                                                                            <strong>Go and get it! &rarr;</strong>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <!--  BOTTOM IMAGE -->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td style="padding: 50px 0 0 0;" align="center">
+                        <img src="https://raw.githubusercontent.com/hackclub/dinosaurs/master/dinosaur_sealing_letters_with_wax.png" width="200" border="0" alt="orpheus-mailing-letters" style="float: right; display: block; padding: 0; color: #666666; width: 300px; height: auto;" class="img-max">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- FOOTER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="#ffffff" align="center">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                    <td style="padding: 20px 0px 20px 0px;">
+                        <!-- UNSUBSCRIBE COPY -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="responsive-table">
+                            <tr>
+                                <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Nunito, Verdana, sans-serif; color:#666666;">
+                                    <span class="appleFooter" style="color:#666666;">4463 Oak Grove Drive, La Canada, CA 91011</span><br><a class="original-only" style="color: #666666; text-decoration: none;">HackClub</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
