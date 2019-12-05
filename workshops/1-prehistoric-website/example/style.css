@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+  }
+  
+  body {
+    background-image: url("https://raw.githubusercontent.com/hackclub/dinosaurs/master/8-bit_dino.png");
+    background-size: 64px;
+    background-repeat: repeat; 
+    background-color: gray;
+    background-blend-mode: multiply;
+    color: white;
+  }
