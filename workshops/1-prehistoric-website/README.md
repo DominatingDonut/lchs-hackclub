@@ -16,6 +16,7 @@ The 90s.
 4. [Making It Pretty(?)](##making-it-pretty) (CSS)
 5. [Going Beyond](##going-beyond)
     * [Useful Resorces](###useful-resources)
+6. [Final Notes](##final-notes)
 
 
 ## Overview
@@ -58,10 +59,14 @@ and click `run`.
 
 Awesome, you just added a paragraph **element** to your webpage! Every *thingy* on a website is an element: a block of text, an image, list, whatever. Elements can be made of more elements, or text like you just did.
 
+Let's add another thingy. Below the `p` element, add an `img` element:
 ```html
-<img src="https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/workshops/1-prehistoric-website/dino-v-cat.gif"/>
+<img src="LINK"/>
 ```
+Replace `LINK` with the image of your choice (or this one: https://raw.githubusercontent.com/Milotrince/lchs-hackclub/master/workshops/1-prehistoric-website/dino-v-cat.gif)
+
 ![dino-v-cat](./dino-v-cat.gif)
+
 Very epic.
 
 The `src` is for source. Do you see how it is inside the `img` tag? When information is inside a tag like that, they are called **attributes**. In our case, `src` is the attribute of `img` with the link to the image we want to show!
@@ -142,10 +147,15 @@ There are tons of cool things you can do with a site. With CSS, you can add hove
 
 There's also an aspect we haven't covered yet: JavaScript! With JavaScript, we can manipulate elements and program behaviors! We will explore JavaScript in the next workshop. Look forward to it!
 
-
 ### Useful Resources
 * [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 * [Visual CSS Reference](https://cssreference.io/)
 * [CodePen.io](https://codepen.io/picks/pens/) is a fun place to explore! These are mini HTML/CSS/JS pages that other people have made.
 * Other HackClub students! Just ask, and we will help you out :)
 * Honestly, you can Google anything!
+
+
+## Final Notes
+You are now armed with everything you need to know to make a prehistoric website! Get out there and make something!
+
+![you-can-do-it](https://raw.githubusercontent.com/hackclub/dinosaurs/master/motivational_dinosaur.png)
