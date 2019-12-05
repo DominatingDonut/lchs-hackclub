@@ -8,15 +8,15 @@ The 90s.
 
 
 ## Table of Contents
-1. [Overview](##overview)
-2. [Setup](##setup)
-3. [Adding Stuff](##adding-stuff) (HTML)
-    * [First Steps with HTML](###first-steps-with-html)
-    * [Common Elements](###common-elements)
-4. [Making It Pretty(?)](##making-it-pretty) (CSS)
-5. [Going Beyond](##going-beyond)
-    * [Useful Resorces](###useful-resources)
-6. [Final Notes](##final-notes)
+1. [Overview](#overview)
+2. [Setup](#setup)
+3. [Adding Stuff](#adding-stuff) (HTML)
+    * [First Steps with HTML](#first-steps-with-html)
+    * [Common Elements](#common-elements)
+4. [Making It Pretty(?)](#making-it-pretty) (CSS)
+5. [Going Beyond](#going-beyond)
+    * [Useful Resorces](#useful-resources)
+6. [Final Notes](#final-notes)
 
 
 ## Overview
