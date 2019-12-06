@@ -1,6 +1,5 @@
 ### Workshop 1
 # Prehistoric Website
-##### Trinity Chung
 
 Alright guys.. we are going to be travelling far, far back in history into a dangerous era:
 
@@ -22,14 +21,17 @@ The 90s.
 ## Overview
 You will be designing a wonderfully horrid site.
 
-![example](./screenshot.png)
+[![example](./screenshot.png)](https://repl.it/@Milotrince/hcws-1-prehistoric-website)
+Link to this project: https://repl.it/@Milotrince/hcws-1-prehistoric-website
 
 Here are some more sites for your inspiration and viewing pleasure:
 
-* [SpaceJam](https://www.spacejam.com/archive/spacejam/movie/jam.html)
+* [JPL in 1999](https://mars.jpl.nasa.gov/msp98/orbiter/)
 * [Internet Explorer is EVIL!](http://toastytech.com/evil/)
-* [CSS Zen Garden](
+* These sites might be blocked over school wifi:
+   * [CSS Zen Garden](
 http://csszengarden.com/?cssfile=https://www.brucelawson.co.uk/zen/sample.css)
+   * [SpaceJam](https://www.spacejam.com/archive/spacejam/movie/jam.html)
 
 Be creative! (And if you want to create a more modern pretty site, you totally can!)
 
